@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Control de Inventario</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+<body>
+
+    <!-- Navbar de Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Menubar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ejercicio1.html">Ejercicio 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ejercicio2.html">Ejercicio 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="ejercicio3.html">Ejercicio 3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="mb-4">Control de Stock de Productos (Frutas)</h2>
+
+        <form id="formularioInventario" class="mb-3"></form>
+
+        <button class="btn btn-primary mb-3" type="button" onclick="calcularCompras()">Calcular Compras</button>
+
+        <div id="resultado" class="alert d-none"></div>
+    </div>
+
+    <script src="funciones/js/bootstrap.bundle.min.js"></script>
+    <script src="funciones/calculos.js"></script>
+</body>
+</html>
